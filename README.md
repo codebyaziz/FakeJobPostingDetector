@@ -1,36 +1,81 @@
-# 🕵️ Fake Job Posting Detector
+🕵️ Fake Job Posting Detector
 
-## 📌 Problem
-Fake job postings are a major issue online, often used for scams, identity theft, and fraud. Many people fall for them because they look very similar to real postings.
+An AI-powered tool that detects fake job postings using Machine Learning + Streamlit.
+It helps job seekers stay safe from scams, fraud, and identity theft by analyzing job descriptions and predicting whether they are Real or Fake.
 
-## 💡 Solution
-We built a **Machine Learning model** that detects whether a job posting is **Real** or **Fake** using text classification.  
-Our project also includes a **Streamlit web app** where users can paste job descriptions and instantly check their authenticity.
 
-## 🗂️ Dataset
-- Source: [Kaggle – Real or Fake Job Posting Prediction](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)  
-- Size: ~18,000 job postings (real + fake)  
-- Preprocessing: Removed missing values, selected relevant text columns, cleaned text.
+🚀 Features
 
-## ⚙️ Tech Stack
-- Python  
-- Pandas, Scikit-learn  
-- Streamlit (for UI)  
-- Kaggle (for model training)  
+🔍 Text Classification model trained on real-world dataset (Kaggle)
 
-## 📊 Model
-- Algorithm: Logistic Regression  
-- Accuracy: **96%**  
-- Metrics:
-  - Precision (Real): 0.97  
-  - Precision (Fake): 0.95  
-  - Weighted F1: 0.96  
+📊 Achieved 96% accuracy on validation data
 
-## 🖥️ Streamlit App
-- Input: Paste a job description.  
-- Output: Prediction → **REAL ✅** or **FAKE ❌**, along with confidence score.  
+🖥️ Easy-to-use Streamlit web app
 
-Run locally:
-```bash
+⚡ Real-time prediction with confidence score
+
+🔒 Protects users from online scams
+
+
+📂 Project Structure
+📁 FakeJobPostingDetector
+ ┣ 📂 model                # Trained model + vectorizer
+ ┣ 📜 app.py               # Streamlit app
+ ┣ 📜 notebook.ipynb       # Model training notebook (Kaggle)
+ ┣ 📜 requirements.txt     # Dependencies
+ ┗ 📜 README.md            # Project documentation
+
+⚙️ Installation
+
+Clone the repository:
+
+git clone https://github.com/codebyaziz/FakeJobPostingDetector.git
+cd FakeJobPostingDetector
+
+
+Install dependencies:
+
 pip install -r requirements.txt
+
+
+Run the Streamlit app:
+
 streamlit run app.py
+
+🎯 Usage
+
+Real Job:
+
+We are hiring a Data Analyst at XYZ Corp. 
+Requirements: SQL, Python, problem-solving skills. 
+Apply with your resume through our career portal.
+
+
+Fake Job:
+
+Work from home, earn $5000 weekly with no experience required! 
+Just send your bank details and ID proof to start immediately.
+
+📊 Results
+
+Accuracy: 96.5%
+
+Precision (Fake class): 0.95
+
+Recall (Fake class): 0.35
+
+
+🛠️ Tech Stack
+
+Python 🐍
+
+Scikit-learn 🤖
+
+Pandas, NumPy 📊
+
+Streamlit 🌐
+
+
+
+Aziz Jalaluddin
+B.Tech CSE (Data Science)
